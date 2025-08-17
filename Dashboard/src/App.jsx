@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.css"; // Import for font
+import "./App.css"; 
 
 function App() {
   const [properties, setProperties] = useState([]);
@@ -13,14 +13,11 @@ function App() {
 
   return (
     <div className="relative min-h-screen px-6 py-10 font-inter overflow-hidden ">
-      {/* Gradient Background Animation */}
       <div className="absolute inset-0 z-0 animate-gradient bg-gradient-to-br from-indigo-100 via-blue-50 to-white bg-[length:400%_400%]" />
 
-      {/* Decorative Blobs */}
       <div className="absolute top-[-80px] left-[-80px] w-[300px] h-[300px] bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 z-0 animate-pulse" />
       <div className="absolute bottom-[-80px] right-[-80px] w-[300px] h-[300px] bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 z-0 animate-pulse" />
 
-      {/* Optional Noise Layer */}
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 z-0 pointer-events-none" />
 
       {/* Main Content */}
