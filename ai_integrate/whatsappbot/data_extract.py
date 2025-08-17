@@ -4,16 +4,17 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+from typing import Optional
 
 load_dotenv()
 
 class RentalExtract(BaseModel):
-    bhk: int | str = Field(description="Number of bedrooms in BHK format (e.g., 1, 2, 3, etc.)")
-    furnishing: str = Field(description="Unfurnished / Semi-furnished / Furnished / Unknown")
-    location: str = Field(description="Neighbourhood and city, if available")
-    rent_amount: int = Field(description="Rent in INR (numeric, no commas)")
-    deposit_amount: int = Field(description="Deposit in INR (numeric, no commas)")
-    property_type: str = Field(description="Apartment / Flat / House / PG / Other")
+    bhk: Optional[int | str] = Field(description="Number of bedrooms in BHK format (e.g., 1, 2, 3, etc.)")
+    furnishing: Optional[str] = Field(description="Unfurnished / Semi-furnished / Furnished / Unknown")
+    location: Optional[str] = Field(description="Neighbourhood and city, if available")
+    rent_amount: Optional[int] = Field(description="Rent in INR (numeric, no commas)")
+    deposit_amount: Optional[int] = Field(description="Deposit in INR (numeric, no commas)")
+    property_type: Optional[str] = Field(description="Apartment / Flat / House / PG / Other")
 
 
 model = ChatGroq(

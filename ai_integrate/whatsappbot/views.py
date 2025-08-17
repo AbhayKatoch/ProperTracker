@@ -71,8 +71,11 @@ def whatsapp_webhook(request):
                 msg = messages[0]
                 from_number = msg["from"]
                 msg_type = msg.get("type")
+                session = sessions.get(from_number)
+                if not session:
+                    sessions[from_number] = {"stage": None, "draft": {"images": []}}
+                    session = sessions[from_number]
 
-                session = sessions.setdefault(from_number, {"stage": None, "draft": {"images": []}})
 
                 if session['stage'] is None:
                     if msg_type == 'text':
