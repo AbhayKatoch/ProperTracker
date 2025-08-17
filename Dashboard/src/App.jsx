@@ -5,7 +5,7 @@ function App() {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/property")
+    fetch("https://propertracker.onrender.com/property")
       .then((res) => res.json())
       .then((data) => setProperties(data))
       .catch((err) => console.error("Error fetching properties:", err));
@@ -41,7 +41,7 @@ function App() {
                 <div className="relative">
                   {prop.images && prop.images.length > 0 ? (
                     <img
-                      src={`http://127.0.0.1:8000/media/${prop.images[0]}/`}
+                      src={`https://propertracker.onrender.com/media/${prop.images[0]}/`}
                       alt="property"
                       className="w-full h-60 object-cover transition-transform duration-300 hover:scale-105"
                     />
