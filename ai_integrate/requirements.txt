@@ -34,3 +34,5 @@ psycopg2-binary
 python-dotenv
 requests
 django-cors-headers
+
+dj-database-url
