@@ -26,3 +26,10 @@ numpy
 scikit-learn
 
 langchain-groq
+
+Django
+djangorestframework
+gunicorn
+psycopg2-binary
+python-dotenv
+requests
