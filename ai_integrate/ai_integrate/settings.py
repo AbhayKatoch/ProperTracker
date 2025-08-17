@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'ai_integrate.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.getenv("DATABASE_URL")  # add this in Render’s env vars
+        default=os.getenv("DATABASE_URL") 
     )
 }
 
