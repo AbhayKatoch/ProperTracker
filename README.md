@@ -75,7 +75,7 @@ The dashboard displays:
 > Please upload property images. Send "DONE" when finished.  
 
 **User:**  
-> *(uploads 2 images, then types "DONE")*  
+> *(uploads images, then types "DONE")*  
 
 **Bot:**  
 > Great! Now, under which broker name should I save this?  
