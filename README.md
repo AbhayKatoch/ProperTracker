@@ -34,13 +34,14 @@ This project is a **WhatsApp bot + Property Dashboard** that allows brokers/user
 
 ---
 
-## 🖼️ Screenshots
+##  Screenshots
 
 ### 🔹 Property Upload Flow
-![Upload Flow](./WhatsApp%20Image%202025-08-18%20at%2016.36.15.jpeg)
+![Upload Flow](https://github.com/user-attachments/assets/894d3f9e-48be-4a4c-9504-b93da329defc)
+
 
 ### 🔹 Property Saved Confirmation
-![Saved Confirmation](./WhatsApp%20Image%202025-08-18%20at%2016.36.16.jpeg)
+![Saved Confirmation](https://github.com/user-attachments/assets/54e6fa08-2a7e-454c-9b10-97941dc4b2f6)
 
 ---
 
