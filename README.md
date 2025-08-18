@@ -34,6 +34,16 @@ This project is a **WhatsApp bot + Property Dashboard** that allows brokers/user
 
 ---
 
+## 🖼️ Screenshots
+
+### 🔹 Property Upload Flow
+![Upload Flow](./WhatsApp%20Image%202025-08-18%20at%2016.36.15.jpeg)
+
+### 🔹 Property Saved Confirmation
+![Saved Confirmation](./WhatsApp%20Image%202025-08-18%20at%2016.36.16.jpeg)
+
+---
+
 ##  Dashboard  
 
 Visit the dashboard here 👉 [Property Dashboard](https://proper-tracker.vercel.app/)  
