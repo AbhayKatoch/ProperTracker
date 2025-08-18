@@ -14,16 +14,20 @@ This project is a **WhatsApp bot + Property Dashboard** that allows brokers/user
 ## 📱 How It Works  
 
 1. **Send a message** to this WhatsApp number:  
-   -> **`+1 555 145 2717`**  
+   -> **`+1 555 145 2717`**
+   Important Note on Access:
+   Since this project is currently running in test mode, only added tester accounts in the Meta Developer Console can interact with the bot. Messages from non-tester numbers may fail with errors (e.g., 400 Bad       Request)
 
-2. Start by sending a short **description** of the property (e.g., *"2 BHK semi-furnished apartment in Pune for 20,000 INR with 50,000 deposit"*)  
 
-3. The bot will guide you step by step:  
+
+3. Start by sending a short **description** of the property (e.g., *"2 BHK semi-furnished apartment in Pune for 20,000 INR with 50,000 deposit"*)  
+
+4. The bot will guide you step by step:  
    - Confirm the property upload  
    - Upload multiple images (`Send "DONE"` when finished)  
    - Provide broker name  
 
-4. The details are:  
+5. The details are:  
    - **Extracted by AI** (BHK, furnishing, location, rent, deposit, property type)  
    - **Stored in the backend database**  
    - **Displayed in the property dashboard**  
