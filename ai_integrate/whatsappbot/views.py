@@ -104,7 +104,7 @@ def whatsapp_webhook(request):
                     if msg_type == 'image':
                         image_id = msg.get('image', {}).get('id')
                         session['draft']["images"].append(image_id)
-                        send_message(from_number, 'Image received ✅. Send more or type "DONE".')
+                        send_message(from_number, 'Image received ✅')
                     elif msg_type == 'text' and msg.get('text', {}).get('body', '').strip().lower() == 'done':
                         session['stage'] = 'broker'
                         send_message(from_number, 'Great! Now, under which broker name should I save this?')
