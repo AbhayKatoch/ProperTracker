@@ -96,7 +96,7 @@ def whatsapp_webhook(request):
                         session['stage'] = 'image_upload'
                         send_message(from_number, 'Please upload property images. Send "DONE" when finished.')
                     else:
-                        session.pop(from_number, None)
+                        sessions.pop(from_number, None)
                         send_message(from_number, 'Okay, not saved.')
                     return HttpResponse(status=200)
 
@@ -125,7 +125,7 @@ def whatsapp_webhook(request):
                         )
 
                         send_message(from_number, 'Property saved ✅')
-                        session.pop(from_number, None)
+                        sessions.pop(from_number, None)
                     return HttpResponse(status=200)
 
         except Exception as e:
